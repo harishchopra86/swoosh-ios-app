@@ -8,18 +8,21 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class WelcomeVC: UIViewController {
 
+    @IBOutlet weak var imgVwBackground: UIImageView!
+    @IBOutlet weak var imgVwSwooshLogo: UIImageView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func unwindFromSkillVC(unwindSegue:UIStoryboardSegue) {
+        
+        
     }
-
 
 }
 
