@@ -15,6 +15,7 @@
 		6826657F1FBBE3F600E9DE4A /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6826657E1FBBE3F600E9DE4A /* BorderButton.swift */; };
 		68CDC9761FBC8EDF00C4301F /* LeagueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CDC9751FBC8EDF00C4301F /* LeagueVC.swift */; };
 		68CDC9781FBC8EEB00C4301F /* SkillVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CDC9771FBC8EEB00C4301F /* SkillVC.swift */; };
+		68CDC97A1FBC936100C4301F /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CDC9791FBC936100C4301F /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		6826657E1FBBE3F600E9DE4A /* BorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
 		68CDC9751FBC8EDF00C4301F /* LeagueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueVC.swift; sourceTree = "<group>"; };
 		68CDC9771FBC8EEB00C4301F /* SkillVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillVC.swift; sourceTree = "<group>"; };
+		68CDC9791FBC936100C4301F /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 		68CDC9741FBC8E6D00C4301F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				68CDC9791FBC936100C4301F /* Player.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 				68CDC9761FBC8EDF00C4301F /* LeagueVC.swift in Sources */,
 				6826656C1FBBE04300E9DE4A /* AppDelegate.swift in Sources */,
 				68CDC9781FBC8EEB00C4301F /* SkillVC.swift in Sources */,
+				68CDC97A1FBC936100C4301F /* Player.swift in Sources */,
 				6826657F1FBBE3F600E9DE4A /* BorderButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -111,6 +111,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
                                         <state key="normal" title="Mens"/>
+                                        <connections>
+                                            <action selector="btnMensTapped:" destination="in8-PW-tI5" eventType="touchUpInside" id="c9C-PJ-NWv"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVw-45-wdc" customClass="BorderButton" customModule="Swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="85" width="335" height="60"/>
@@ -120,6 +123,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
                                         <state key="normal" title="Women"/>
+                                        <connections>
+                                            <action selector="btnWomenTapped:" destination="in8-PW-tI5" eventType="touchUpInside" id="guW-Ys-nWR"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MoV-BL-N97" customClass="BorderButton" customModule="Swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="170" width="335" height="60"/>
@@ -129,6 +135,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
                                         <state key="normal" title="Co-ed"/>
+                                        <connections>
+                                            <action selector="btnCoedTapped:" destination="in8-PW-tI5" eventType="touchUpInside" id="vh9-FL-XH0"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -152,7 +161,7 @@
                                     <segue destination="oAV-9D-zr2" kind="unwind" unwindAction="unwindFromSkillVCWithUnwindSegue:" id="kZb-NJ-DSB"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWX-q6-wfN" customClass="BorderButton" customModule="Swoosh" customModuleProvider="target">
+                            <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWX-q6-wfN" customClass="BorderButton" customModule="Swoosh" customModuleProvider="target">
                                 <rect key="frame" x="20" y="587" width="335" height="60"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -161,7 +170,7 @@
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
                                 <state key="normal" title="NEXT"/>
                                 <connections>
-                                    <segue destination="TTg-Eb-0Wi" kind="show" id="4GD-3E-HxJ"/>
+                                    <action selector="btnNextTapped:" destination="in8-PW-tI5" eventType="touchUpInside" id="JPO-FJ-EI5"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -186,6 +195,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HVK-66-mQk"/>
                     </view>
+                    <connections>
+                        <outlet property="btnNext" destination="SWX-q6-wfN" id="ggN-7v-5EF"/>
+                        <segue destination="TTg-Eb-0Wi" kind="show" identifier="skillVCSegue" id="GV6-85-Ayl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GcQ-rM-xxE" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="oAV-9D-zr2" userLabel="Exit" sceneMemberID="exit"/>
@@ -267,7 +280,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJg-wr-Eca" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-582" y="24"/>
+            <point key="canvasLocation" x="-414" y="24"/>
         </scene>
     </scenes>
     <resources>
